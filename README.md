@@ -1,44 +1,41 @@
 # Wan Huang Portfolio Site
 
-A simple, responsive one-page portfolio site for my professional brand in health informatics, digital health strategy, and public-sector transformation.
+A light-themed, responsive one-page profile site for health informatics, digital health strategy, and public-sector transformation.
 
 Live site: https://wan-huang.github.io/
 
 ## Purpose
 
-This site serves as a lightweight professional hub to share my interests, experience, and emerging work at the intersection of:
+This site is a professional brand hub focused on:
 
 - Health informatics
 - Digital health strategy
 - Public-sector transformation
 - Governance and portfolio strategy
 - Interoperability and connected data
-- GenAI in health
-- System performance and benefits realization
+- Generative AI in health
+- Evaluation, benefits realization, and system performance
 
 ## Site structure
 
 - `index.html` — main portfolio page
 - `assets/css/style.css` — visual design and responsive layout
 - `assets/js/script.js` — mobile navigation and footer year
+- `assets/img/wan-huang-headshot.png` — profile image used in the hero card
 
-## Current sections
+## Design note
 
-- Hero and professional positioning
-- Focus areas
-- Current direction
-- Selected experience
-- Pro bono, advisory, and community governance work
-- Learning Lab / side project ideas
-- Contact links
+The layout is inspired by simple one-page portfolio patterns, but the code is custom-written for this profile and does not copy the referenced theme. The design intentionally avoids heavy map overlays and oversized bold text so the page reads more like a polished professional profile.
 
-## Notes
+## Before publishing
 
-This is a public-facing portfolio site. It intentionally avoids private addresses, phone numbers, internal government materials, unpublished project details, and confidential information.
+- Replace `your-email@example.com` in `index.html`, or remove the email button.
+- Review all wording for public-facing use.
+- Avoid personal addresses, phone numbers, confidential materials, internal government documents, or unpublished project details.
 
 ## Future updates
 
-Planned additions may include:
+Possible additions:
 
 - Digital Health Governance Toolkit
 - GenAI in Health Notes
