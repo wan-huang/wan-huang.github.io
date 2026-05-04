@@ -190,44 +190,54 @@ a {
 }
 
 .network-map {
-  position: absolute;
-  right: -90px;
-  top: 70px;
-  width: min(62vw, 780px);
-  opacity: 0.86;
-  filter: drop-shadow(0 24px 42px rgba(60, 125, 217, 0.18));
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
 
 .map-path {
   fill: none;
   stroke: url(#pathGradient);
-  stroke-width: 4;
+  stroke-width: 3;
   stroke-linecap: round;
-  stroke-dasharray: 12 16;
-  opacity: 0.72;
+  stroke-dasharray: 6 8;
+  opacity: 0.9;
+}
+
+.map-path-secondary {
+  fill: none;
+  stroke: #8fb3d9;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-dasharray: 4 8;
+  opacity: 0.45;
 }
 
 .node {
-  fill: #fff;
-  stroke: #3c7dd9;
-  stroke-width: 4;
+  fill: #6b8de3;
 }
 
 .node-primary {
-  stroke: #146f83;
-  fill: #eaffff;
+  fill: #4f7ce6;
 }
 
 .node-muted {
-  stroke: #7c59d1;
-  opacity: 0.68;
+  fill: #b7c9e6;
+  opacity: 0.7;
+}
+
+.node-ring {
+  fill: none;
+  stroke: #4f7ce6;
+  stroke-width: 1.5;
+  opacity: 0.16;
 }
 
 .map-label {
-  fill: rgba(9, 34, 53, 0.36);
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: 0.12em;
+  font-size: 15px;
+  font-weight: 600;
+  fill: #5d6f8f;
+  letter-spacing: 0.02em;
 }
 
 .hero-grid {
