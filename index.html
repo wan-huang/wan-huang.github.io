@@ -41,7 +41,7 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-bg" aria-hidden="true">
-        <svg class="network-map" viewBox="0 0 900 420" role="img" aria-label="Abstract connected data map linking BC, Michigan, Montreal, and Toronto" aria-hidden="true">
+        <svg class="network-map" viewBox="0 0 900 420" focusable="false">
           <defs>
             <linearGradient id="pathGradient" x1="0" x2="1" y1="0" y2="1">
               <stop offset="0%" stop-color="#2aa7b8" />
@@ -49,49 +49,40 @@
               <stop offset="100%" stop-color="#8d6ee7" />
             </linearGradient>
           </defs>
-        
-          <!-- Main journey path -->
+
+          <!-- Abstract professional journey: BC, Michigan, Montreal, Toronto -->
           <path
-            d="M85 285
-               C180 210, 255 210, 340 245
-               S500 250, 595 205
-               S700 165, 760 150"
+            d="M85 285 C175 215, 260 215, 340 245 S500 250, 595 205 S700 165, 760 150"
             class="map-path"
           />
-        
-          <!-- Secondary connectors -->
           <path
             d="M340 245 C430 185, 520 165, 595 205"
             class="map-path-secondary"
           />
           <path
-            d="M595 205 C650 170, 710 155, 760 150"
+            d="M595 205 C650 172, 710 155, 760 150"
             class="map-path-secondary"
           />
-        
-          <!-- Nodes -->
+
           <circle cx="85" cy="285" r="9" class="node node-primary" />
           <circle cx="340" cy="245" r="8" class="node node-primary" />
           <circle cx="595" cy="205" r="8" class="node node-primary" />
           <circle cx="760" cy="150" r="8" class="node node-primary" />
-        
-          <!-- Subtle support nodes -->
+
           <circle cx="170" cy="230" r="4" class="node node-muted" />
           <circle cx="250" cy="220" r="4" class="node node-muted" />
           <circle cx="460" cy="210" r="4" class="node node-muted" />
           <circle cx="675" cy="175" r="4" class="node node-muted" />
-        
-          <!-- Soft glow rings -->
+
           <circle cx="85" cy="285" r="16" class="node-ring" />
           <circle cx="340" cy="245" r="14" class="node-ring" />
           <circle cx="595" cy="205" r="14" class="node-ring" />
           <circle cx="760" cy="150" r="14" class="node-ring" />
-        
-          <!-- Labels -->
+
           <text x="85" y="318" class="map-label" text-anchor="middle">BC</text>
           <text x="340" y="278" class="map-label" text-anchor="middle">Michigan</text>
-          <text x="595" y="238" class="map-label" text-anchor="middle">Toronto</text>
-          <text x="760" y="130" class="map-label" text-anchor="middle">Montreal</text>
+          <text x="595" y="238" class="map-label" text-anchor="middle">Montreal</text>
+          <text x="760" y="130" class="map-label" text-anchor="middle">Toronto</text>
         </svg>
       </div>
 
@@ -112,7 +103,9 @@
         <aside class="hero-card" aria-label="Profile snapshot">
           <div class="status-pill">Current focus</div>
           <h2>Health Informatics & Responsible Innovation</h2>
-          <p>BC public-sector digital health work, UofT Executive Master of Health Informatics, and practical side projects in governance, GenAI, connected data, and system performance.</p>
+          <p>
+            BC public-sector digital health work, UofT Executive Master of Health Informatics, and practical side projects in governance, GenAI, connected data, and system performance.
+          </p>
           <div class="mini-metrics" aria-label="Professional background highlights">
             <div>
               <strong>9+</strong>
@@ -120,7 +113,7 @@
             </div>
             <div>
               <strong>5</strong>
-              <span>Pro bono, advisory & governance projects</span>
+              <span>Pro bono & governance projects</span>
             </div>
           </div>
         </aside>
@@ -175,6 +168,9 @@
           <p>
             I am also advancing my expertise through the University of Toronto’s Executive Master of Health Informatics, with interests in GenAI in health, interoperability, evaluation, benefits realization, connected data, and system performance.
           </p>
+          <p>
+            My professional journey spans BC, Michigan, Montreal, and Toronto — combining public-sector digital health, enterprise health IT, analytics, management training, and health informatics leadership.
+          </p>
         </div>
       </div>
     </section>
@@ -215,26 +211,26 @@
     <section class="section muted" id="pro-bono" aria-labelledby="pro-bono-title">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow">Pro Bono, Advisory & Community Governance</p>
-          <h2 id="pro-bono-title">Selected pro bono, advisory, product strategy, and community governance work reflecting my interest in practical innovation, financial stewardship, and mission-driven impact.</h2>
+          <p class="eyebrow">Pro bono, advisory & community governance</p>
+          <h2 id="pro-bono-title">Supporting mission-driven work with strategy, product thinking, and practical stewardship.</h2>
         </div>
 
         <div class="card-grid two">
-         <article class="project-card">
+          <article class="project-card">
             <h3>Victoria Children’s Centre Society</h3>
             <p>Serve on the Board of Directors as Treasurer, supporting financial oversight, budgeting, reporting, governance, and community accountability for a local childcare organization.</p>
-          </article>         
+          </article>
           <article class="project-card">
             <h3>NeuroServo</h3>
             <p>Supported go-to-market planning, pricing, team structure, and expansion strategy for an early-stage medical device company.</p>
           </article>
           <article class="project-card">
-            <h3>Precare</h3>
-            <p>Developed a growth and business proposal for a free online patient education platform competing for seed funding.</p>
-          </article>
-          <article class="project-card">
             <h3>Turbodega</h3>
             <p>Contributed to product and data strategy, including data model design and campaign analytics to identify operational savings opportunities.</p>
+          </article>
+          <article class="project-card">
+            <h3>Precare</h3>
+            <p>Developed a growth and business proposal for a free online patient education platform competing for seed funding.</p>
           </article>
           <article class="project-card">
             <h3>UNLTD / Thinkr Consulting</h3>
@@ -254,22 +250,22 @@
 
         <div class="card-grid four">
           <article class="lab-card">
-            <span>Coming soon</span>
+            <span>Concept</span>
             <h3>Digital Health Governance Toolkit</h3>
             <p>A lightweight framework for evaluating digital and AI-enabled health initiatives.</p>
           </article>
           <article class="lab-card">
-            <span>Coming soon</span>
+            <span>Drafting</span>
             <h3>GenAI in Health Notes</h3>
             <p>Short explainers on use cases, risks, workflow fit, evaluation, and public-sector readiness.</p>
           </article>
           <article class="lab-card">
-            <span>Coming soon</span>
+            <span>Exploring</span>
             <h3>Connected Data Map</h3>
             <p>A simplified visual map of how health systems, registries, identity, and interoperability connect.</p>
           </article>
           <article class="lab-card">
-            <span>Coming soon</span>
+            <span>Prototype idea</span>
             <h3>Portfolio Reporting Prototype</h3>
             <p>A mock dashboard for summarizing status, risks, milestones, benefits, and decision points.</p>
           </article>
@@ -283,13 +279,13 @@
           <p class="eyebrow">Let’s connect</p>
           <h2 id="connect-title">Interested in health informatics, GenAI in health, interoperability, or digital health transformation?</h2>
           <p>
-            I’m always interested in connecting with people working on practical projects that improve decision-making, reduce administrative burden, and create measurable health system value.
+            I’m always happy to connect with people working on practical, responsible digital health ideas — especially projects that improve decision-making, reduce administrative burden, and create measurable health system value.
           </p>
         </div>
         <div class="connect-actions">
           <a class="btn btn-primary" href="https://www.linkedin.com/in/wanhuang/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           <a class="btn btn-secondary" href="https://github.com/wan-huang" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn-light" href="mailto:wanh5425@gmail.com">Email</a>
+          <a class="btn btn-light" href="mailto:your-email@example.com">Email</a>
         </div>
       </div>
     </section>
