@@ -1,30 +1,50 @@
 # Wan Huang Portfolio Site
 
-A simple, responsive one-page portfolio site for GitHub Pages.
+A simple, responsive one-page portfolio site for my professional brand in health informatics, digital health strategy, and public-sector transformation.
 
-## What is included
+Live site: https://wan-huang.github.io/
+
+## Purpose
+
+This site serves as a lightweight professional hub to share my interests, experience, and emerging work at the intersection of:
+
+- Health informatics
+- Digital health strategy
+- Public-sector transformation
+- Governance and portfolio strategy
+- Interoperability and connected data
+- GenAI in health
+- System performance and benefits realization
+
+## Site structure
 
 - `index.html` — main portfolio page
 - `assets/css/style.css` — visual design and responsive layout
 - `assets/js/script.js` — mobile navigation and footer year
 
-## Quick setup for GitHub Pages
+## Current sections
 
-1. Create a new GitHub repository named `wan-huang.github.io`.
-2. Upload all files from this folder to the repository root.
-3. In GitHub, go to **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Choose the `main` branch and root folder, then save.
-6. Your site should publish at `https://wan-huang.github.io/` after GitHub finishes deployment.
+- Hero and professional positioning
+- Focus areas
+- Current direction
+- Selected experience
+- Pro bono, advisory, and community governance work
+- Learning Lab / side project ideas
+- Contact links
 
-## Before publishing
+## Notes
 
-- Update the email link in `index.html` by replacing `your-email@example.com`.
-- Review all project descriptions for public-facing wording.
-- Avoid including private addresses, phone numbers, internal government materials, or unpublished project details.
+This is a public-facing portfolio site. It intentionally avoids private addresses, phone numbers, internal government materials, unpublished project details, and confidential information.
 
-## Optional customization
+## Future updates
 
-- Replace the initials logo in the header by editing the `.brand-mark` text in `index.html`.
-- Adjust colours in `assets/css/style.css` under the `:root` section.
-- Add live project links in the Learning Lab section as side projects are created.
+Planned additions may include:
+
+- Digital Health Governance Toolkit
+- GenAI in Health Notes
+- Connected Data Map
+- Portfolio Reporting Prototype
+
+## Built with
+
+HTML, CSS, and JavaScript, published with GitHub Pages.
