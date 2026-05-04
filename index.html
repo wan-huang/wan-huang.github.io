@@ -41,26 +41,57 @@
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
       <div class="hero-bg" aria-hidden="true">
-        <svg class="network-map" viewBox="0 0 900 420" role="img" aria-label="Abstract connected data map linking BC and Toronto">
+        <svg class="network-map" viewBox="0 0 900 420" role="img" aria-label="Abstract connected data map linking BC, Michigan, Montreal, and Toronto">
           <defs>
             <linearGradient id="pathGradient" x1="0" x2="1" y1="0" y2="1">
               <stop offset="0%" stop-color="#2aa7b8" />
-              <stop offset="55%" stop-color="#4f7ce6" />
+              <stop offset="45%" stop-color="#4f7ce6" />
               <stop offset="100%" stop-color="#8d6ee7" />
             </linearGradient>
           </defs>
         
-          <path d="M70 285 C220 185, 360 310, 520 210 S680 125, 735 215" class="map-path" />
-          <circle cx="70" cy="285" r="8" class="node node-primary" />
-          <circle cx="520" cy="210" r="6" class="node" />
-          <circle cx="735" cy="215" r="8" class="node node-primary" />
+          <!-- Main journey path -->
+          <path
+            d="M85 285
+               C180 210, 255 210, 340 245
+               S500 250, 595 205
+               S700 165, 760 150"
+            class="map-path"
+          />
         
-          <circle cx="215" cy="198" r="4" class="node node-muted" />
-          <circle cx="350" cy="289" r="4" class="node node-muted" />
-          <circle cx="640" cy="155" r="4" class="node node-muted" />
+          <!-- Secondary connectors -->
+          <path
+            d="M340 245 C430 185, 520 165, 595 205"
+            class="map-path-secondary"
+          />
+          <path
+            d="M595 205 C650 170, 710 155, 760 150"
+            class="map-path-secondary"
+          />
         
-          <text x="0" y="322" class="map-label">BC Public Sector</text>
-          <text x="640" y="252" class="map-label" text-anchor="start">UofT EMHI</text>
+          <!-- Nodes -->
+          <circle cx="85" cy="285" r="9" class="node node-primary" />
+          <circle cx="340" cy="245" r="8" class="node node-primary" />
+          <circle cx="595" cy="205" r="8" class="node node-primary" />
+          <circle cx="760" cy="150" r="8" class="node node-primary" />
+        
+          <!-- Subtle support nodes -->
+          <circle cx="170" cy="230" r="4" class="node node-muted" />
+          <circle cx="250" cy="220" r="4" class="node node-muted" />
+          <circle cx="460" cy="210" r="4" class="node node-muted" />
+          <circle cx="675" cy="175" r="4" class="node node-muted" />
+        
+          <!-- Soft glow rings -->
+          <circle cx="85" cy="285" r="16" class="node-ring" />
+          <circle cx="340" cy="245" r="14" class="node-ring" />
+          <circle cx="595" cy="205" r="14" class="node-ring" />
+          <circle cx="760" cy="150" r="14" class="node-ring" />
+        
+          <!-- Labels -->
+          <text x="85" y="318" class="map-label" text-anchor="middle">BC</text>
+          <text x="340" y="278" class="map-label" text-anchor="middle">Michigan</text>
+          <text x="595" y="238" class="map-label" text-anchor="middle">Toronto</text>
+          <text x="760" y="130" class="map-label" text-anchor="middle">Montreal</text>
         </svg>
       </div>
 
