@@ -29,7 +29,6 @@ The layout is inspired by simple one-page portfolio patterns, but the code is cu
 
 ## Before publishing
 
-- Replace `your-email@example.com` in `index.html`, or remove the email button.
 - Review all wording for public-facing use.
 - Avoid personal addresses, phone numbers, confidential materials, internal government documents, or unpublished project details.
 
