@@ -1,33 +1,29 @@
 const header = document.querySelector('[data-header]');
+const nav = document.querySelector('[data-nav]');
 const navToggle = document.querySelector('[data-nav-toggle]');
-const navMenu = document.querySelector('[data-nav-menu]');
-const year = document.querySelector('[data-current-year]');
+const year = document.querySelector('[data-year]');
 
-function updateHeaderShadow() {
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
+
+window.addEventListener('scroll', () => {
   if (!header) return;
   header.classList.toggle('is-scrolled', window.scrollY > 12);
+});
+
+if (navToggle && nav) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('is-open');
+    document.body.classList.toggle('nav-open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      document.body.classList.remove('nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
-
-function closeNav() {
-  document.body.classList.remove('nav-open');
-  navMenu?.classList.remove('is-open');
-  navToggle?.setAttribute('aria-expanded', 'false');
-}
-
-navToggle?.addEventListener('click', () => {
-  const isOpen = navMenu?.classList.toggle('is-open');
-  document.body.classList.toggle('nav-open', Boolean(isOpen));
-  navToggle.setAttribute('aria-expanded', String(Boolean(isOpen)));
-});
-
-navMenu?.addEventListener('click', (event) => {
-  if (event.target instanceof HTMLAnchorElement) closeNav();
-});
-
-window.addEventListener('scroll', updateHeaderShadow, { passive: true });
-window.addEventListener('resize', () => {
-  if (window.innerWidth > 760) closeNav();
-});
-
-if (year) year.textContent = new Date().getFullYear();
-updateHeaderShadow();
